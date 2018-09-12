@@ -1,19 +1,38 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title> Música para Todos</title>
 
         <link href="estiloSite.css" rel="stylesheet" type="text/css">
 
+        <script>
+            function Iniciar(){
+                var c = document.getElementById("canvasTopo");
+                var ctx = c.getContext("2d");
+                
+                // Create gradient
+                var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
+                grd.addColorStop(0, "#57b2d8");
+                grd.addColorStop(1, "white");
+                
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(0, 0, 1500, 150);
+            }
+        </script>
     </head>
     
-    <body>
+    <body onload="Iniciar()">
 
         <nav class="menu"> 
-                <a href="#" class="menu-login"><i></i><span>Login</span></a>
-                <a href="#" class="menu-instrumentos"><i class="imagem-instrumentos"></i><span>Instrumentos</span></a>
-                <a href="#" class="menu-playlist"><i></i><span>Playlist</span></a>
-                <a href="#" class="menu-cadastro"><i></i><span>Cadastro</span></a>
+                <a href="#" class="menu-instrumentos"><span>Instrumentos</span></a>
+                <a href="#" class="menu-playlist"><span>Playlist</span></a>
+                <a href="#" class="menu-cadastro"><span>Cadastro</span></a>
         </nav>
+
+        <canvas id="canvasTopo" width="1500" height="150">
+                Seu browser não suporta o elemento CANVAS, atualize-se!!!
+        </canvas>
 
     </body>
 </html>
