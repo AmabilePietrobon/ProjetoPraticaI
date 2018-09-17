@@ -31,11 +31,12 @@ nav
 .menu ul li {
     list-style: none;
     display: inline;
+    color: rgb(5, 79, 143);
 }
 
 .menu ul li a {
     display: inline-block;
-    color: #000000;
+    color: rgb(3, 98, 182);
     text-align: center;
     padding: 40px 40px;
     text-decoration: none;
@@ -44,32 +45,39 @@ nav
 .active 
 {
     background-color: #FF8000;
+    color: #FFFFFF;
     text-decoration: none;
-    color: #000000;
     border-radius: 60px;
     padding: 15px 15px;
     box-shadow: 5px 5px 3px #BDBDBD;
 }
 
+/* .home
+{
+    background: url("imagens/home.jpg");
+    width: 300px;
+    height: 300px;
+} */
+
 .menu ul a:hover {
-    color: #FFFFFF;
     background-color: rgb(231, 123, 22);
 }
 
 .menu ul li a:hover {
     color: #FF8000;
+    text-shadow: 5px 5px 3px rgba(253, 126, 0, 0.452);
     background-color: #FFFFFF
 }
 
-/* canvas#canvasTopo
+canvas#canvasTopo
 {
     position: absolute;
-    top: 35%;
+    top: 95%;
     left: 400px; 
     align-content: center;
     border: transparent;
     margin: 30px;
-} */
+}
 
 .imagemCriancas
 {
@@ -79,7 +87,7 @@ nav
     position: absolute;
     top: 14%;
     left: 0%;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 #caixaDeTexto
@@ -87,10 +95,12 @@ nav
     background-color: #ffffff;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 20%;
-    border-radius: 40px;
+    font-weight: bold;
+    border-radius: 50px;
     text-shadow: 5px 5px 3px #BDBDBD;
+    box-shadow: 5px 8px 5px #BDBDBD;
 
     width: 60%;
     height: 40%;
@@ -114,3 +124,7 @@ nav
 {
     background-color: #41c0a2;
 }
+
+/* - mudar a fonte
+- tirar o quadrado branco 
+- fazer o como usar  */
