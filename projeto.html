@@ -17,27 +17,39 @@
                 
                 // Fill with gradient
                 ctx.fillStyle = grd;
-                ctx.fillRect(0, 0, 1500, 150);
+                ctx.fillRect(0, 0, 1500, 550);
             }
         </script>
     </head>
     
     <body onload="Iniciar()">
 
+        <span class="imagemCriancas"> </span>
+
         <nav class="menu"> 
             <ul>
                 <li><a href="#"><span>Instrumentos</span></a></li>
                 <li><a href="#"><span>Playlist</span></a></li>
                 <li><a href="#"><span>Login</span></a></li>
-<!--                <li style="float:right"><a class="active" href="#">Cadastrar</a></li>-->
+                <a class="active" href="#">Cadastrar</a>
             </ul>
         </nav>
 
-        <canvas id="canvasTopo" width="200" height="150">
-                Seu browser não suporta o elemento CANVAS, atualize-se!!!
-        </canvas>
-        
-        <span class="imagemCriancas">
+        <div id="caixaDeTexto">
+            <br>
+            <h1> Música para Todos </h1> <br>
+            <h2> Aprendendo música de um jeito fácil para criancas especiais </h2> <br>
+            <a href="#"> Crie uma conta </a>
+        </div>
 
+        <span class="comoFazer">
+            
+        </span>
+        
     </body>
 </html>
+
+<!-- 
+        <canvas id="canvasTopo" width="1000" height="550">
+            Seu browser não suporta o elemento CANVAS, atualize-se!!!
+    </canvas> -->
