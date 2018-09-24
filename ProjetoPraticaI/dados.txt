@@ -1,0 +1,70 @@
+Instrumentos
+------------
+
+- piano
+- xilofone
+- violão
+
+
+Faixa Etária 
+------------
+
+- Baby 		-> 1-3
+- KidsI 	-> 3-6
+- KidsII 	-> 6-9
+- TeensI 	-> 9-12
+- TeensII 	-> 12-15
+
+
+Notas 
+-----
+
+violão
+- C
+- D
+- E 
+- F
+- G
+- A 
+- B
+
+xilofone 
+- DÓ
+- RÉ 
+- MÍ 
+- FÁ
+- SOL
+- LÁ 
+- SÍ
+- DÓ
+
+piano (imagem)
+- Dó 
+– Dó# 
+– Ré 
+– Ré# 
+– Mi 
+– Fá 
+– Fá# 
+– Sol 
+– Sol# 
+– Lá 
+– Lá# 
+– Si 
+– Dó
+
+
+Playlist 
+--------
+
+- Baby 	
+
+- KidsI 
+
+- KidsII 
+
+- TeensI 
+
+- TeensII 
+
+

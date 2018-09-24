@@ -1,25 +1,76 @@
 <html>
-        <head>
-            <meta charset="UTF-8">
-            <title> Música para Todos</title>
-    
-            <link href="estiloSite.css" rel="stylesheet" type="text/css">
-    
-            <script>
-                function Iniciar(){
-                    var c = document.getElementById("canvasTopo");
-                    var ctx = c.getContext("2d");
-                    
-                    // Create gradient
-                    var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
-                    grd.addColorStop(0, "#57b2d8");
-                    grd.addColorStop(1, "white");
-                    
-                    // Fill with gradient
-                    ctx.fillStyle = grd;
-                    ctx.fillRect(0, 0, 1500, 550);
+    <head>
+        <meta charset="UTF-8">
+        <title> Música para Todos</title>
+
+        <link href="estiloSite.css" rel="stylesheet" type="text/css">
+
+        <script>
+            function Iniciar(){
+                var c = document.getElementById("canvasTopo");
+                var ctx = c.getContext("2d");
+                
+                // Create gradient
+                var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
+                grd.addColorStop(0, "#57b2d8");
+                grd.addColorStop(1, "white");
+                
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(0, 0, 1500, 550);
+            }
+            
+        function iniciaAJAX() 
+        {
+            var objetoAJAX;
+            if (window.XMLHttpRequest) 
+            {
+                objetoAJAX = new XMLHttpRequest();
+            } 
+            else 
+                if(window.ActiveXObject) 
+                {
+                    objetoAJAX = new ActiveXObject("Msxml2.XMLHTTP");
+                    if (!objetoAJAX) 
+                    {
+                        objetoAJAX = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                } 
+                else 
+                {
+                    alert("Seu navegador não suporta esta aplicação");
                 }
-            </script>
+            
+            return objetoAJAX;
+            
+        } //fim da função iniciaAJAX()
+
+        var requisicaoAjax = iniciaAJAX();
+
+        if (requisicaoAjax) 
+        {
+            requisicaoAjax.onreadystatechange = function () {
+                if (requisicaoAjax.readyState == 4) 
+                {
+                    //alert("Chegou a requisição do Servidor");
+                    if (requisicaoAjax.status == 200) 
+                    {
+                        alert("Chegou a requisição feita ao servidor");
+                    } 
+                    
+                    else 
+                    {
+                        alert("Problema na comunicação com o servidor");
+                    }
+                }
+                }
+		}
+
+		requisicaoAjax.open("GET", "HelloWorld.txt", true);
+		requisicaoAjax.setRequestHeader("Content-Type", "application/text");
+		requisicaoAjax.send();
+
+        </script>
         </head>
         
         <body onload="Iniciar()">
@@ -32,6 +83,56 @@
                         <a class="active" href="cadastro.html">Cadastrar</a>
                     </ul>
                 </nav>
+            
+<form name="frm_Principal" method="post" action="">
+ <table width="60%" border="0">
+     <tr>
+   <td><label for="lb_Telefone"> Nome Completo: </label></td>
+   <td><input type="tel" name="txt_Tel" pattern="^\d{2}-\d{5}-\d{4}$"></td>
+	</tr>
+
+	<tr>
+   <td>Campo de Busca</td>
+   <td><input type="search" name="txt_Busca"></td>
+	 <td><input type="button" name="btn_Pesquisar" value="Pesquisar"></td>
+	</tr>
+
+	<tr>
+   <td>Campo de Email</td>
+   <td><input type="email" name="txt_Email" required></td>
+	</tr>
+
+	<tr>
+   <td>Campo de Data</td>
+   <td><input type="date" name="txt_Data"></td>
+	</tr>
+	
+	<tr>
+   <td>Campo de Data/Hora</td>
+   <td><input type="datetime-local" name="txt_Data_Hora"></td>
+	</tr>
+
+	<tr>
+   <td>Campo de Mes</td>
+   <td><input type="month" name="txt_Mes"></td>
+	</tr>
+	
+	<tr>
+   <td>Campo Numérico</td>
+   <td><input type="number" name="txt_Valor" value="1.2" step="0.2" min="1.0" max="20.0"></td>
+	</tr>
+	
+	<tr>
+   <td>Campo Intervalo Numérico</td>
+   <td><input type="range" name="txt_Intervalo" value="10.0" step="1.0" min="10.0" max="50.0"></td>
+	</tr>
+</table>
+<br><br>
+
+<input type="submit" value="Enviar Dados">
+
+</form>
+        </div>
 
     </body>
     </html>

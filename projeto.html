@@ -19,33 +19,86 @@
                 ctx.fillStyle = grd;
                 ctx.fillRect(0, 0, 1500, 550);
             }
+            
+        function iniciaAJAX() 
+        {
+            var objetoAJAX;
+            if (window.XMLHttpRequest) 
+            {
+                objetoAJAX = new XMLHttpRequest();
+            } 
+            else 
+                if(window.ActiveXObject) 
+                {
+                    objetoAJAX = new ActiveXObject("Msxml2.XMLHTTP");
+                    if (!objetoAJAX) 
+                    {
+                        objetoAJAX = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                } 
+                else 
+                {
+                    alert("Seu navegador não suporta esta aplicação");
+                }
+            
+            return objetoAJAX;
+            
+        } //fim da função iniciaAJAX()
+
+        var requisicaoAjax = iniciaAJAX();
+
+        if (requisicaoAjax) 
+        {
+            requisicaoAjax.onreadystatechange = function () {
+                if (requisicaoAjax.readyState == 4) 
+                {
+                    //alert("Chegou a requisição do Servidor");
+                    if (requisicaoAjax.status == 200) 
+                    {
+                        alert("Chegou a requisição feita ao servidor");
+                    } 
+                    
+                    else 
+                    {
+                        alert("Problema na comunicação com o servidor");
+                    }
+                }
+                }
+		}
+
+		requisicaoAjax.open("GET", "HelloWorld.txt", true);
+		requisicaoAjax.setRequestHeader("Content-Type", "application/text");
+		requisicaoAjax.send();
+
         </script>
     </head>
     
     <body onload="Iniciar()">
 
-        <span class="imagemCriancas"> </span>
+        <div id="imagemCriancas"> 
+            <div id="caixaDeTexto">
+            <br>
+            <h1> Música para Todos </h1> <br>
+            <h2> Aprendendo música de um jeito fácil para criancas especiais </h2> <br>
+            <a href="cadastro.html"> Crie uma conta </a>
+        </div>
+        </div>
 
-        <nav class="menu"> 
+        <div id="menu"> 
             <ul>
                 <li><a href="instrumentos.html">Instrumentos</a></li>
                 <li><a href="playlist.html">Playlists</a></li>
                 <li><a href="login.html">Login</a></li>
                 <a class="active" href="cadastro.html">Cadastrar</a>
             </ul>
-        </nav>
-
-        <div id="caixaDeTexto">
-            <br>
-            <h1> Música para Todos </h1> <br>
-            <h2> Aprendendo música de um jeito fácil para criancas especiais </h2> <br>
-            <a href="cadastro.html"> Crie uma conta </a>
         </div>
 
-        
+                
+<!--
         <canvas id="canvasTopo" width="100" height="550">
             Seu browser não suporta o elemento CANVAS, atualize-se!!!
     </canvas>
+-->
 
         <!-- <span class="comoFazer">
             
