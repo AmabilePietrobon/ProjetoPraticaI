@@ -1,129 +1,83 @@
-body
+body 
 {
-    text-align: center;
-    background: #ffffff;
-    font-family: Kristen ITC, Showcard Gothic, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+main 
+{
+    flex: 1 0 auto;
+    margin: 7%;
 }
 
-nav 
+nav
 {
-    margin: 0px;
-    font-size: 18;
+    font-size: 40px;
+    background-color: #03a9f4;
+    font-weight: bold;
 }
 
-#menu
+h4
 {
     font-weight: bold;
-    margin: 0px;
-    font-size: 20;
 }
 
-#menu ul 
+#botaoIdades
 {
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    border: 1px solid #e7e7e7;
-    background-color: #ffffff;
-    margin: 0%;
+    margin: 40%;
 }
 
-#menu ul li {
-    list-style: none;
-    display: inline;
-    color: rgb(5, 79, 143);
-}
-
-#menu ul li a {
-    display: inline-block;
-    color: rgb(3, 98, 182);
-    text-align: center;
-    padding: 40px 40px;
-    text-decoration: none;
-}
-
-.active 
+#login
 {
-    background-color: #FF8000;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 60px;
-    padding: 15px 15px;
-    box-shadow: 5px 5px 3px #BDBDBD;
+    margin-left: 30%;
 }
 
-/* .home
+#cadastrar
 {
-    background: url("imagens/home.jpg");
-    width: 300px;
-    height: 300px;
-} */
-
-.menu ul a:hover {
-    background-color: rgb(231, 123, 22);
+    margin-top: 20%;
 }
 
-.menu ul li a:hover {
-    color: #FF8000;
-    text-shadow: 5px 5px 3px rgba(253, 126, 0, 0.452);
-    background-color: #FFFFFF
-}
-
-canvas#canvasTopo
+hr
 {
-    position: absolute;
-    top: 95%;
-    left: 400px; 
-    align-content: center;
-    border: transparent;
-    margin: 30px;
+    background-color: #ff7043;
+    border-color: #ff7043;
+    height: 1%;
+    
 }
 
-#imagemCriancas
+#containers
 {
-    background: url("imagens/criancas.jpg");
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 14%;
-    left: 0%;
-    opacity: 0.9;
+    margin-top: 10%;
 }
 
-#caixaDeTexto
+#collection
 {
-    background-color: #ffffff;
-    text-align: center;
-    position: relative;
-    top: 30%;
-    left: 20%;
+    background-color: #e1f5fe;
+    color: #01579b;
+    margin-top: 35%;
     font-weight: bold;
-    border-radius: 50px;
-    text-shadow: 5px 5px 3px #BDBDBD;
-    box-shadow: 5px 8px 5px #BDBDBD;
-
-    width: 60%;
-    height: 40%;
 }
 
-#caixaDeTexto a
+#imagemHome
 {
-    background-color: #29dbb6;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 20;
-    padding: 10px 10px;
+    margin: 5%;
+    margin-top: 0%;
+}
+
+#imagemInstrumentos
+{
+    margin: 10%;
+    margin-top: 0%;
+}
+
+#containers header
+{
+    text-align: center;
     font-weight: bold;
-    text-shadow: none;
-    box-shadow: 5px 5px 3px #BDBDBD;
 }
 
-#caixaDeTexto a:hover
+footer
 {
-    background-color: #41c0a2;
+    background-color: #03a9f4;
 }
-
-/* - mudar a fonte
-- tirar o quadrado branco 
-- fazer o como usar  */

@@ -1,0 +1,46 @@
+
+Repositório -> local onde vai estar armazenado o desenvolvimento do seu projeto e as "fotos"
+
+Commit -> "tirar foto" de partes do seu projeto para, caso você não goste do resultado depois de modificações 	   possa retornar ao momento em que a foto foi tirada (disfazer as nodificações)
+
+Push -> "colocou a foto no álbum"
+
+Pull -> Pega para analizar as mudanças feitas pela sua "dupla"
+
+
+GIT HUB
+
+git -> mudanças locais 
+
+git hub dektop -> armazenamento de projetos na nuven 
+
+
+Como funciona
+
+diretório local -> pasta com seus arquivos que está no seu computador 
+
+stage -> modificar linha de comando efetivamente 
+
+repositório local -> apenas as mudanças feitas (novas fotos -> so falta mandar para a nuven)
+
+repositório remoto -> nuven 
+
+repositório => público ou privado
+	-> sendo público as pessoas podem ver, mas não podem modificar -> apenas dar dicas de modificação 
+
+criar um repositório no site -> adicionar as pastas 
+
+HEAD -> último commit do repositório
+README -> descreve cada passo do projeto 
+
+gitignore -> não adiciona arquivos "desnecessários" ao repositório (ex: .class)
+
+licença -> restringe como podem usar seu repositório
+	-> MIT -> qualquer um pode usar o código desde que me dê os créditos e não me dá responsabilidade
+
+
+projetos em grupo -> Settings -> Collaborators -> 'adicionar o nome dos participantes'
+
+
+
+	 
