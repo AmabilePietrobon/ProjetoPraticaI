@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Música para Todos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="jsInicio.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.collapsible');
+                options = {};
+                var instances = M.Collapsible.init(elems, options);
+              });
+        
+    </script>
+
+    <link href="estiloSite.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="light-blue lighten-5">
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <a class="brand-logo"><img src="imagens/logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="projeto.html">Home</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li><a href="playlist.html">Playlists</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <center>
+            <h2 class="instrumento"> Xilofone </h2>
+
+            <div class="row">
+                <img src="imagens/xilofone.png">
+            </div>
+            
+            <a class="btn-small waves-effect indigo darken-1 center" href="piano.html">
+                Trocar de instrumento
+            </a>
+            
+            <div class="row" id="music">
+                <h5>
+                    Músicas simples
+                </h5>
+            </div>
+
+            <ul class="collapsible popout">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>Atirei o pau no gato</div>
+                    <div class="collapsible-body purple lighten-4">
+                        <span>  SOL-FA-MI-RE-MI-FA-SOL-SOL-SOL <br> 
+                                LA-SOL-FA-FA-FA <br>
+                                SOL-FA-MI-MI-MI <br>
+                                FA-SOL-LA-LA-LA <br>
+                                TI-LA-SOL-SOL-SOL <br>
+                                MI-FA-SOL-MI-FA-SOL-SOL-FA-MI-RE-DO <br>
+                        
+                        </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>Dona Aranha</div>
+                    <div class="collapsible-body deep-orange lighten-4">
+                        <span>
+                            DO-DO-DO-RE-MI-MI <br>
+                            MI-RE-DO-RE-MI-DO-DO <br>
+                            DO-DO-DO-RE-MI-MI <br>
+                            MI-RE-DO-RE-MI-SOL <br>
+                            LA-LA-LA-LA-SOL-MI <br>
+                            LA-LA-LA-LA-SOL-MI <br>
+                            DO-DO-DO-RE-MI-MI <br>
+                            MI-RE-DO-RE-MI-DO <br>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>Noite feliz</div>
+                    <div class="collapsible-body green accent-1">
+                        <span>
+                            SOL-LA-SOL-MI <br>
+                            SOL-LA-SOL-MI<br>
+                            RE-RE-TI<br>
+                            DO-DO-SOL<br>
+                            LA-LA-DO <br> 
+                            TI-LA-SOL-LA-SOL-MI <br>
+                            LA-LA-DO <br>
+                            TI-LA-SOL-LA-SOL-MI <br>
+                            RE-RE-FA-RE-TI-DO-MI <br> 
+                            DO-SOL-MI-SOL-FA-RE-DO <br>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </center>
+        
+        <div class="row" id="passoApasso">
+                    <h6>
+                        Quer fazer um xilofone reciclável em poucos passos?
+                    </h6>
+                    <a class="btn-small waves-effect red lighten-1 center" href="passo_a_passo.html">
+                        Clique aqui
+                    </a>
+                </div>
+        
+    </main>
+
+    <footer class="page-footer light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Música para Todos</h5>
+                    <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo.png"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

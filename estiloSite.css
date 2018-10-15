@@ -1,83 +1,119 @@
-body 
-{
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-  
-main 
-{
+
+main {
     flex: 1 0 auto;
     margin: 7%;
 }
 
-nav
-{
+nav {
     font-size: 40px;
     background-color: #03a9f4;
     font-weight: bold;
 }
 
-h4
+h4 
 {
     font-weight: bold;
 }
 
-#botaoIdades
+h5
 {
-    margin: 40%;
+    font-weight: bold;
+    text-align: left;
 }
 
-#login
+.desc
 {
-    margin-left: 30%;
+    font-weight: normal;
 }
 
-#cadastrar
-{
-    margin-top: 20%;
+#materiais li { list-style-type: square; }
+
+#faixaEtaria {
+    font-size: 16;
 }
 
-hr
+#itens li { list-style: circle;}
+
+.brand-logo
 {
-    background-color: #ff7043;
-    border-color: #ff7043;
-    height: 1%;
-    
+    margin: 1.5%;
 }
 
-#containers
+.instrumento {
+    font-weight: bold;
+}
+
+#passoApasso
 {
     margin-top: 10%;
 }
 
-#collection
+#xilofoneRec {text-decoration: underline;}
+
+#labelBut {
+    margin-right: 5%;
+}
+
+#botaoIdades {
+    margin: 40%;
+}
+
+#login {
+    margin-left: 30%;
+}
+
+#cadastrar {
+    margin-top: 20%;
+}
+
+hr {
+    background-color: #624dd6;
+    border-color: #624dd6;
+    height: 1%;
+}
+
+#music 
 {
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+#containers {
+    margin-top: 10%;
+}
+
+#collection {
     background-color: #e1f5fe;
     color: #01579b;
     margin-top: 35%;
     font-weight: bold;
 }
 
-#imagemHome
+#sobre h3
 {
+    font-weight: bold;
+}
+
+#imagemHome {
     margin: 5%;
     margin-top: 0%;
 }
 
-#imagemInstrumentos
-{
+#imagemInstrumentos {
     margin: 10%;
     margin-top: 0%;
 }
 
-#containers header
-{
+#containers header {
     text-align: center;
     font-weight: bold;
 }
 
-footer
-{
+footer {
     background-color: #03a9f4;
 }

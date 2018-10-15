@@ -1,200 +1,139 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Música para Todos</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title> Música para Todos</title>
 
-        <link href="estiloSite.css" rel="stylesheet" type="text/css">
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <script>
-            function Iniciar(){
-                var c = document.getElementById("canvasTopo");
-                var ctx = c.getContext("2d");
-                
-                // Create gradient
-                var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
-                grd.addColorStop(0, "#57b2d8");
-                grd.addColorStop(1, "white");
-                
-                // Fill with gradient
-                ctx.fillStyle = grd;
-                ctx.fillRect(0, 0, 1500, 550);
-            }
-            
-            function Verificar()
-            {
-                var nome = document.getElementById("first_name").value;
-                var sobrenome = document.getElementById("last_name").value;
-                var telefone = document.getElementById("telefone").value;
-                var senha = document.getElementById("password").value;
-                var email = document.getElementById("email").value;
-                
-                if(nome == "" || sobrenome == "" || senha == "" || email == "")
-                    alert ("Preencha todos os campos.");
-                else
-                    if (ValidarSenha())
-                        alert("Cadastro efetuado com sucesso!");
-                        
-            }
-            
-            function ValidarSenha()
-            {
-                var senha1 = document.getElementById("password").value;
-                var senha2 = document.getElementById("password_validation").value;
-                
-                if (senha1 != senha2)
-                    {
-                        alert("Senhas não compatíveis.");
-                        document.getElementById("password").value = "";
-                        document.getElementById("password_validation").value = "";
-                        
-                        return false;
-                    }
-                
-                return true;
-            }
-            
-        // function iniciaAJAX() 
-        // {
-        //     var objetoAJAX;
-        //     if (window.XMLHttpRequest) 
-        //     {
-        //         objetoAJAX = new XMLHttpRequest();
-        //     } 
-        //     else 
-        //         if(window.ActiveXObject) 
-        //         {
-        //             objetoAJAX = new ActiveXObject("Msxml2.XMLHTTP");
-        //             if (!objetoAJAX) 
-        //             {
-        //                 objetoAJAX = new ActiveXObject("Microsoft.XMLHTTP");
-        //             }
-        //         } 
-        //         else 
-        //         {
-        //             alert("Seu navegador não suporta esta aplicação");
-        //         }
-            
-        //     return objetoAJAX;
-            
-        // } //fim da função iniciaAJAX()
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        // var requisicaoAjax = iniciaAJAX();
+    <link href="estiloSite.css" rel="stylesheet" type="text/css">
 
-        // if (requisicaoAjax) 
-        // {
-        //     requisicaoAjax.onreadystatechange = function () {
-        //         if (requisicaoAjax.readyState == 4) 
-        //         {
-        //             //alert("Chegou a requisição do Servidor");
-        //             if (requisicaoAjax.status == 200) 
-        //             {
-        //                 alert("Chegou a requisição feita ao servidor");
-        //             } 
-                    
-        //             else 
-        //             {
-        //                 alert("Problema na comunicação com o servidor");
-        //             }
-        //         }
-        //         }
-		// }
+    <script type="text/javascript" src="jsInicio.js"></script>
 
-		// requisicaoAjax.open("GET", "HelloWorld.txt", true);
-		// requisicaoAjax.setRequestHeader("Content-Type", "application/text");
-		// requisicaoAjax.send();
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            options = {};
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
 
-        </script>
-    </head>
-    
-    <body onload="Iniciar()" class="light-blue lighten-5">
+</head>
 
-<header> 
+<body class="light-blue lighten-5">
+
+    <header>
         <nav>
             <div class="nav-wrapper">
-               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
                 <a href="#" class="brand-logo"><img src="imagens/logo.png"></a>
-               <ul class="right hide-on-med-and-down">
-                   <li class="active"><a href="projeto.html">Home</a></li>
-               <li><a href="instrumentos.html">Instrumentos</a></li>
-               <li><a href="playlist.html">Playlists</a></li>
-               <li><a href="login.html">Login</a></li>
-               <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>  
-              </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="projeto.html">Home</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li><a href="playlist.html">Playlists</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>
+                </ul>
             </div>
-          </nav>
-            
-</header>
-            
-<main>    
-    <div class="container">
-        <div class="row">
-                    <div class="input-field col s6">
-                      <input id="first_name" type="text" class="validate">
-                      <label for="first_name">Nome </label>
-                      </div>
-                    <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Sobrenome</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="age" type="number" class="validate">
-                      <label for="age">Idade</label>
-                    </div>
-                  <div>
-                  <div class="input-field col s6">
-                        <input id="telefone" type="tel" class="validate">
-                        <label for="telefone">Telefone</label>
-                      </div>
-                    </div>
-                    <div class="input-field col s6">
-                            <input id="password" type="password">
-                            <label for="password">Senha</label>
-                          </div>
-                     <div class="input-field col s6">
-                            <input id="password_validation" type="password">
-                            <label for="password_validation">Confirmação de Senha</label>
-                          </div>
-                    <div class="input-field col s6">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                    </div>
-            </div>
-        
-                <div class="row">
-                    <button class="btn waves-effect red lighten-1" type="submit" name="action" onClick="Verificar();">Cadastrar
-                    </button> 
-                </div>
-        </div>
-    
-    </main>
-        
-    <footer class="page-footer light-blue">
-          <div class="container">
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Música para Todos</h5>
-                <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
-              </div>
-              <div class="col l3 center s6">
-                <a href="projeto.html"> <img src="imagens/logo.png"> </a>
-              </div>
-              <div class="col l3 center s6">
-                <a href="projeto.html"> <img src="imagens/logo.png"> </a>
-              </div>
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Nome </label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Sobrenome</label>
+                </div>
+                <div class="input-field col s12">
+                    <p>
+                        <label id="faixaEtaria"> Faixa Etária </label>
+                        <br><br>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" value="1" checked />
+                            <span id="labelBut">Baby (0-3)</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" value="2" />
+                            <span id="labelBut">KidsI (3-6) </span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" value="3" />
+                            <span id="labelBut">KidsII (6-9) </span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" value="4" />
+                            <span id="labelBut">TeensI (9-12)</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" value="5" />
+                            <span id="labelBut">TeensII (12-15)</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field col s6">
+                    <input id="telefone" type="tel" class="validate">
+                    <label for="telefone">Telefone</label>
+                </div>
+                <div class="input-field col s6">
+                    <select>
+                        <option value="1">Feminino</option>
+                        <option value="2">Masculino</option>
+                    </select>
+                    <label> Sexo </label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="password" type="password" class="senha">
+                    <label for="password">Senha</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="password_validation" type="password" class="senha">
+                    <label for="password_validation">Confirmação de Senha</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+
+            <div class="row">
+                <button class="btn waves-effect red lighten-1" type="submit" name="action" onClick="VerificarCampos();">Cadastrar
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Música para Todos</h5>
+                    <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo.png"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-            © 2018 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">Sobre</a>
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
             </div>
-          </div>
-</footer>
-        
-    </body>
-    </html>
+        </div>
+    </footer>
+
+</body>
+
+</html>

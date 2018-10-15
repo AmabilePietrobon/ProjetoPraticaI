@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Música para Todos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="jsInicio.js"></script>
+
+    <link href="estiloSite.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.collapsible');
+                options = {};
+                var instances = M.Collapsible.init(elems, options);
+              });
+        
+    </script>
+
+</head>
+
+<body class="light-blue lighten-5">
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <a href="#" class="brand-logo"><img src="imagens/logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="projeto.html">Home</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li><a href="playlist.html">Playlists</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    
+    <main>
+        <center>
+            <h2 class="instrumento"> Piano </h2>
+
+            <div class="row">
+                <img src="imagens/piano.png">
+            </div>
+            
+            <a class="btn-small waves-effect indigo darken-1 center" href="xilofone.html">
+                Trocar de instrumento
+            </a>
+            
+            <div class="row" id="music">
+                <h5>
+                    Músicas simples
+                </h5>
+            </div>
+            
+            <ul class="collapsible popout">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i> Parabéns pra você</div>
+                    <div class="collapsible-body green accent-1">
+                        <span>  
+                            SOL-SOL-LA-SOL-DO-SI <br>
+                            SOL-SOL-LA-SOL-RE-DO-DO <br>
+                            MI-MI-SOL-MI-DO-SI-LA <br>
+                            FA-FA-MI-DO-RE-DO-DO <br>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>Cinco patinhos</div>
+                    <div class="collapsible-body amber lighten-4">
+                        <span>  SOL-DO-DO-DO-SI-LA-SOL <br>
+                                SOL-SOL-DO-DO-FA-FA-MI-MI-RE-RE <br>
+                                SOL-DO-DO-DO-DO-DO-SI-LA-SOL <br>
+                                SOL-SOL-DO-DO-FA-FA-FA-MI-RE-DO <br>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>Brilha brilha estrelinha</div>
+                    <div class="collapsible-body lime accent-1">
+                        <span>
+                            DO-DO-LA-LA-SOL-SOL-FA-FA-MI-MI-RE-RE-DO <br>
+                            SOL-SOL-FA-FA-MI-MI-RE-RE-SOL-SOL-FA-FA-MI-MI-RE-RE-DO-DO-SOL-SOL <br>
+                            LA-LA-SOL-SOL-FA-FA-MI-MI-RE-RE-DO <br>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            
+        </center>
+    </main>
+
+    <footer class="page-footer light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Música para Todos</h5>
+                    <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo.png"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -8,76 +8,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
         <link href="estiloSite.css" rel="stylesheet" type="text/css">
+        
+        <script type="text/javascript" src="jsInicio.js"></script>
 
-        <script>
-            function Iniciar(){
-                var c = document.getElementById("canvasTopo");
-                var ctx = c.getContext("2d");
-                
-                // Create gradient
-                var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
-                grd.addColorStop(0, "#57b2d8");
-                grd.addColorStop(1, "white");
-                
-                // Fill with gradient
-                ctx.fillStyle = grd;
-                ctx.fillRect(0, 0, 1500, 550);
-            }
-            
-        // function iniciaAJAX() 
-        // {
-        //     var objetoAJAX;
-        //     if (window.XMLHttpRequest) 
-        //     {
-        //         objetoAJAX = new XMLHttpRequest();
-        //     } 
-        //     else 
-        //         if(window.ActiveXObject) 
-        //         {
-        //             objetoAJAX = new ActiveXObject("Msxml2.XMLHTTP");
-        //             if (!objetoAJAX) 
-        //             {
-        //                 objetoAJAX = new ActiveXObject("Microsoft.XMLHTTP");
-        //             }
-        //         } 
-        //         else 
-        //         {
-        //             alert("Seu navegador não suporta esta aplicação");
-        //         }
-            
-        //     return objetoAJAX;
-            
-        // } //fim da função iniciaAJAX()
-
-        // var requisicaoAjax = iniciaAJAX();
-
-        // if (requisicaoAjax) 
-        // {
-        //     requisicaoAjax.onreadystatechange = function () {
-        //         if (requisicaoAjax.readyState == 4) 
-        //         {
-        //             //alert("Chegou a requisição do Servidor");
-        //             if (requisicaoAjax.status == 200) 
-        //             {
-        //                 alert("Chegou a requisição feita ao servidor");
-        //             } 
-                    
-        //             else 
-        //             {
-        //                 alert("Problema na comunicação com o servidor");
-        //             }
-        //         }
-        //         }
-		// }
-
-		// requisicaoAjax.open("GET", "HelloWorld.txt", true);
-		// requisicaoAjax.setRequestHeader("Content-Type", "application/text");
-		// requisicaoAjax.send();
-
-        </script>
     </head>
     
-    <body onload="Iniciar()" class="light-blue lighten-5">
+    <body class="light-blue lighten-5">
 
 <header>
         <nav>
@@ -100,9 +36,8 @@
     <div class="row">
         <div class="col s5 push-s7">
             <div class="collection" id="collection">
-                <a href="#!" class="collection-item">Violão</a>
-                <a href="#!" class="collection-item">Xilofone</a>
-                <a href="#!" class="collection-item">Piano</a>
+                <a href="xilofone.html" class="collection-item">Xilofone</a>
+<a href="piano.html" class="collection-item">Piano</a>
             </div>
         </div>
             
@@ -124,7 +59,7 @@
                 <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
               </div>
               <div class="col l3 center s6">
-                <a href="projeto.html"> <img src="imagens/logo.png"> </a>
+                <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
               </div>
               <div class="col l3 center s6">
                 <a href="projeto.html"> <img src="imagens/logo.png"> </a>
@@ -134,7 +69,10 @@
           <div class="footer-copyright">
             <div class="container">
             © 2018 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">Sobre</a>
+            <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
             </div>
           </div>
 </footer>
+    
+</body>
+</html>

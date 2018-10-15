@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Música para Todos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="estiloSite.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="jsInicio.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            options = {};
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
+
+</head>
+
+<body class="light-blue lighten-5">
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <a href="#" class="brand-logo"><img src="imagens/logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="projeto.html">Home</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li><a href="playlist.html">Playlists</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <div class="row center" id="sobre"> 
+            <h3>
+                Sobre nós
+            </h3>
+        </div>
+                
+
+        <div class="row center">
+                <img src="imagens/logo3.png">
+        </div>
+        
+        <div class="row">
+            <h5 class="desc">
+                Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar. 
+                Por isso, criamos um site para auxiliar os pais a estimularem as habilidades musicais de seus filhos especiais. <br><br>
+                Segundo o Professor Gustavo Schulz Gattino, em relação à música, as pessoas com autismo tendem a apresentar uma capacidade intacta para percepção de melodias simples e um desempenho superior a indivíduos com desenvolvimento típico para processar elementos locais melódicos.  <br><br>
+                O fato de a compreensão dos sentimentos e a expressão emocional estarem aparentemente preservadas entre as pessoas com autismo quando elas são expostas às musicas indica oportunidades e possibilidades amplas de trabalhos terapêuticos que envolvam o desenvolvimento da comunicação, do aprendizado e da interação social a partir da Musicoterapia. <br><br>
+                A Musicoterapia voltada às pessoas com autismo teria como objetivos o desenvolvimento de talentos e habilidades mediado pelas experiências musicais. A música poderia beneficiar o tratamento de crianças, adolescentes e adultos ao:
+            </h5>
+        </div>
+        
+        <ul id="itens">
+            <li>
+                <h5 class="desc">
+                possibilitar a ação das pessoas com autismo dentro da estrutura temporal da música, através de participações livres, da exploração de instrumentos e de improvisações;
+                </h5>
+            </li>
+            <li>
+                <h5 class="desc">
+                oferecer oportunidades de auto-expressão e de vivências criativas, como experiências de comunicação e interação entre pares sem a necessidade do discurso verbal;
+                </h5>
+            </li>
+            <li>
+                <h5 class="desc">
+                oferecer alternativas de expressão e comunicação de modo socialmente adequado;
+                </h5>
+            </li>
+            <li>
+                <h5 class="desc">
+                apresentar oportunidades para que as pessoas com autismo possam assumir responsabilidades com os demais indivíduos, por exemplo, quando os mesmos estão produzindo música juntos;
+                </h5>
+            </li>
+            <li>
+                <h5 class="desc">
+                propiciar o aumento da comunicação verbal e não-verbal entre os pares;
+                </h5>
+            </li>
+            <li>
+                <h5 class="desc">
+                possibilitar a aprendizagem de regras sociais para poder replicá-las em outros ambientes e contextos.
+                </h5>
+            </li>
+        </ul>
+        
+    </main>
+    
+    <footer class="page-footer light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Música para Todos</h5>
+                    <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo.png"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

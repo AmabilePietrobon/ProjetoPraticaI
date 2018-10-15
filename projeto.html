@@ -1,177 +1,113 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Música para Todos</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title> Música para Todos</title>
 
-        <link href="estiloSite.css" rel="stylesheet" type="text/css">
-        
-         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <script>
-            function Iniciar(){
-                var c = document.getElementById("canvasTopo");
-                var ctx = c.getContext("2d");
-                
-                // Create gradient
-                var grd = ctx.createLinearGradient(50, 1000, 1500, 1000);
-                grd.addColorStop(0, "#57b2d8");
-                grd.addColorStop(1, "white");
-                
-                // Fill with gradient
-                ctx.fillStyle = grd;
-                ctx.fillRect(0, 0, 1500, 550);
-            }
-            
-        // function iniciaAJAX() 
-        // {
-        //     var objetoAJAX;
-        //     if (window.XMLHttpRequest) 
-        //     {
-        //         objetoAJAX = new XMLHttpRequest();
-        //     } 
-        //     else 
-        //         if(window.ActiveXObject) 
-        //         {
-        //             objetoAJAX = new ActiveXObject("Msxml2.XMLHTTP");
-        //             if (!objetoAJAX) 
-        //             {
-        //                 objetoAJAX = new ActiveXObject("Microsoft.XMLHTTP");
-        //             }
-        //         } 
-        //         else 
-        //         {
-        //             alert("Seu navegador não suporta esta aplicação");
-        //         }
-            
-        //     return objetoAJAX;
-            
-        // } //fim da função iniciaAJAX()
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        // var requisicaoAjax = iniciaAJAX();
+    <link href="estiloSite.css" rel="stylesheet" type="text/css">
 
-        // if (requisicaoAjax) 
-        // {
-        //     requisicaoAjax.onreadystatechange = function () {
-        //         if (requisicaoAjax.readyState == 4) 
-        //         {
-        //             //alert("Chegou a requisição do Servidor");
-        //             if (requisicaoAjax.status == 200) 
-        //             {
-        //                 alert("Chegou a requisição feita ao servidor");
-        //             } 
-                    
-        //             else 
-        //             {
-        //                 alert("Problema na comunicação com o servidor");
-        //             }
-        //         }
-        //         }
-		// }
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-		// requisicaoAjax.open("GET", "HelloWorld.txt", true);
-		// requisicaoAjax.setRequestHeader("Content-Type", "application/text");
-		// requisicaoAjax.send();
+    <script type="text/javascript" src="jsInicio.js"></script>
 
-        </script>
-    </head>
-    
-    <body onload="Iniciar()" class="light-blue lighten-5">
+</head>
 
-        <span class="imagemCriancas"> </span>
+<body class="light-blue lighten-5">
+
+    <span class="imagemCriancas"> </span>
     <header>
         <nav>
             <div class="nav-wrapper">
-               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
                 <a href="#" class="brand-logo"><img src="imagens/logo.png"></a>
-               <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="projeto.html">Home</a></li>
-               <li><a href="instrumentos.html">Instrumentos</a></li>
-               <li><a href="playlist.html">Playlists</a></li>
-               <li><a href="login.html">Login</a></li>
-               <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>  
-              </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="projeto.html">Home</a></li>
+                    <li><a href="instrumentos.html">Instrumentos</a></li>
+                    <li><a href="playlist.html">Playlists</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="waves-effect red lighten-1 btn-small" href="cadastro.html">Cadastrar</a> </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
-        
-<main>
+
+    <main>
         <center>
             <img src="imagens/home1.png" id="imagemHome">
         </center>
-    
-    <br><br><br>
-    
-    <hr>
 
-    <div class="row" id="containers">
-        
-      <div class="col s4">
-          <header><i class="medium material-icons">person_add</i>
-              <h4>Cadastre</h4><br><br>
-          </header>
-          
-          <section><h6 class="center">Para ensinar música para seu filho <br> 
-                            de um jeito fácil e divertido<br> 
-                            crie uma conta e comece já.</h6>
-          </section>
-      </div>
-        
-      <div class="col s4">
-          <header> <i class="medium material-icons">queue_music</i> 
-              <h4 class="center bold">Ouça</h4><br><br>
-          </header>
-             
-          <section>
+        <br><br><br>
+
+        <hr>
+
+        <div class="row" id="containers">
+
+            <div class="col s4">
+                <header><i class="medium material-icons">person_add</i>
+                    <h4>Cadastre-se</h4><br><br>
+                </header>
+
+                <section>
+                    <h6 class="center">Para ensinar música para seu filho <br>
+                        de um jeito fácil e divertido<br>
+                        crie uma conta e comece já.</h6>
+                </section>
+            </div>
+
+            <div class="col s4">
+                <header> <i class="medium material-icons">library_music</i>
+                    <h4 class="center bold">Ouça</h4><br><br>
+                </header>
+
+                <section>
                     <h6 class="center">Diversas opções disponíveis <br>
-                                  de playlists exclusivas de acordo <br> 
-                                  com cada faixa etária.</h6>
-          </section>
-      </div>
-        
-      <div class="col s4">
-          <header> <i class="medium material-icons">extension</i> 
-              <h4 class="center bold">Ensine</h4><br><br>
-          </header>
-             
-          <section>
+                        de playlists exclusivas de acordo <br>
+                        com cada faixa etária.</h6>
+                </section>
+            </div>
+
+            <div class="col s4">
+                <header> <i class="medium material-icons">extension</i>
+                    <h4 class="center bold">Ensine</h4><br><br>
+                </header>
+
+                <section>
                     <h6 class="center"> Dicas e imagens coloridas vão <br>
-                                  ajudar a ensiná-lo de um jeito<br> 
-                                  que penda sua atenção.</h6>
-          </section>
-      </div>
+                        ajudar a ensiná-lo de um jeito<br>
+                        que penda sua atenção.</h6>
+                </section>
+            </div>
 
-    </div>
-</main>
-        
-<footer class="page-footer light-blue">
-          <div class="container">
+        </div>
+    </main>
+
+    <footer class="page-footer light-blue">
+        <div class="container">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Música para Todos</h5>
-                <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
-              </div>
-              <div class="col l3 center s6">
-                <a href="projeto.html"> <img src="imagens/logo.png"> </a>
-              </div>
-              <div class="col l3 center s6">
-                <a href="http://cotuca.unicamp.br/cotuca/"><img src="imagens/cotuca_logo.png"> </a>
-              </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Música para Todos</h5>
+                    <p class="text-lighten-4"> Acreditamos que crianças especiais tem total capacidade de desenvolvimento de aprendizado, só é necessário saber explicar.</p>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="projeto.html"> <img src="imagens/logo2.png"> </a>
+                </div>
+                <div class="col l3 center s6">
+                    <a href="http://cotuca.unicamp.br/cotuca/"><img src="imagens/cotuca_logo.png"> </a>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-            © 2018 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">Sobre</a>
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="Sobre.html">Sobre</a>
             </div>
-          </div>
-</footer>
-        
-        
-        
-    </body>
-</html>
+        </div>
+    </footer>
+    
+</body>
 
+</html>
